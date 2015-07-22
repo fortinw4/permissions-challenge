@@ -2,7 +2,7 @@
 
 $(function(){
 
-	var usersPath = 'http://localhost:8080/users/'
+	var usersPath = 'http://localhost:3000/users/'
 	var uid = $('').attr('data-id')
 
 	$.get(usersPath).done(function(users) {
@@ -10,7 +10,7 @@ $(function(){
 	})
 
 	$('button').on('click', function() {
-		$('body').append('<ul><li>Brad - <a href="#">Get Permissions</a></li></ul>')
+		$('body').append('<li>Brad - <a href="#">Get Permissions</a></li>')
 	})
 
 })
